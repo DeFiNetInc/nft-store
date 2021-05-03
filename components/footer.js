@@ -58,29 +58,7 @@ function Footer({ categories = [], collections = [] }) {
                     ))}
                   </ul>
                 </div>
-              ) : null}
-              {collections.length ? (
-                <div>
-                  <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
-                    Collections
-                  </h3>
-                  <ul className="mt-4 space-y-4">
-                    {collections.map((collection) => (
-                      <li key={collection.id}>
-                        <Link
-                          href={`/${collection.type.toLowerCase()}/${
-                            collection.slug
-                          }`}
-                        >
-                          <a className="text-base text-gray-500 hover:text-gray-900">
-                            {collection.name}
-                          </a>
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ) : null}
+              ) : null}             
             </div>
           </div>
           <div className="mt-12 xl:mt-0">
